@@ -5,7 +5,7 @@ end
 attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 def batch_badge_creator(attendees)
   badges = []
-    attendees.each do |attendee|
+  attendees.each do |attendee|
     badges << badge_maker(attendee)
   end
   badges
@@ -19,11 +19,4 @@ def assign_rooms(attendees)
   room_assignments
 end
 
-def printer(attendees)
-  badges_and_room_assignments = []
-  badges_and_room_assignments.each do |line|
-      batch_badge_creator(attendees)
-      assign_rooms(attendees)
-    end
-    printer(attendees)
-  end
+def printer()
