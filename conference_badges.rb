@@ -20,6 +20,6 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-  prints batch_badge_creator(attendees)
-  prints assign_rooms(attendees)
+  print batch_badge_creator(attendees)
+  print assign_rooms(attendees)
 end
